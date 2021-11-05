@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.arrow-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #4564E5;
+  border-radius: 0 4px 0 40px;
+}
+
+.arrow-area .arrow {
+  margin-top: -10px;
+  margin-right: -10px;
+  color: white;
+}
+
+.card {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  background-color: #4565e51a;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background-color: #4564E5;
+  height: 40px;
+  width: 46px;
+  border-radius: 32px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.card:hover:before {
+  -webkit-transform: scale(21);
+          transform: scale(21);
+}
+
+.card:hover h3 {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  color: #fff;
+}
+
+.card:hover p {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  color: #d8d8d8;
+}
+/*# sourceMappingURL=style.css.map */
